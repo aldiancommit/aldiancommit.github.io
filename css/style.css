@@ -23,6 +23,7 @@
 
 /* --- General & Typography --- */
 body {
+  
   background-color: var(--bg-light);
   font-family: 'Lato', sans-serif;
   color: var(--text-dark);
@@ -463,6 +464,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  body, html {
+  overflow-x: hidden; /* Mencegah scroll horizontal */
+}
   .timeline-container {
     flex-direction: column;
     align-items: flex-start;
@@ -471,7 +475,7 @@ body {
   }
 
   .timeline-container::before {
-    left: 10px;
+    left: 0;
     top: 0;
     bottom: 0;
     width: 4px;
@@ -490,6 +494,18 @@ body {
     transform: none;
     margin-left: -10px;
   }
+}
+
+.qr-img {
+    width: 350px;
+    height: 267px; /* Atau gunakan width: 350px; dan height: auto; jika rasio aslinya bukan 350x267 */
+}
+
+@media (max-width: 768px) {
+    .qr-img {
+        width: 150px;
+        height: auto;
+    }
 }
 
 /* Preloader */
