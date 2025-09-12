@@ -558,13 +558,14 @@ body > .container {
   box-shadow: 0 6px 14px rgba(0,0,0,0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid #e9ecef;
+  text-align: center;
 }
 
 .count-number {
   font-size: 2.2rem;
   font-weight: 700;
-  color: #212529; /* abu gelap profesional */
-  font-family: 'Kanit', sans-serif; /* bisa ganti ke Inter, Poppins, Roboto */
+  color: #212529;
+  font-family: 'Kanit', sans-serif;
   margin-bottom: 5px;
 }
 
@@ -573,6 +574,35 @@ body > .container {
   letter-spacing: 0.5px;
   text-transform: uppercase;
   font-weight: 500;
-  color: #6c757d; /* abu-abu Bootstrap */
+  color: #6c757d;
 }
 
+/* 🔹 Responsif: Tablet */
+@media (max-width: 992px) {
+  .count-item {
+    min-width: 90px;
+    padding: 16px 20px;
+    margin: 8px;
+  }
+  .count-number {
+    font-size: 1.9rem;
+  }
+  .count-label {
+    font-size: 0.85rem;
+  }
+}
+
+/* 🔹 Responsif: Mobile */
+@media (max-width: 576px) {
+  .count-item {
+    min-width: 70px;
+    padding: 12px 14px;
+    margin: 6px;
+  }
+  .count-number {
+    font-size: 1.5rem;
+  }
+  .count-label {
+    font-size: 0.75rem;
+  }
+}
