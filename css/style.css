@@ -50,7 +50,7 @@ body {
 /* Styling untuk gambar latar belakang */
 .header-static-item {
   position: relative;
-  height: 95vh; /* Sesuaikan tinggi sesuai keinginan, misalnya 60% dari tinggi layar */
+  height: 110vh; /* Sesuaikan tinggi sesuai keinginan, misalnya 60% dari tinggi layar */
 }
 
 .header-static-item img {
@@ -546,5 +546,33 @@ body > .container {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Countdown komponen */
+.count-item {
+  min-width: 110px;
+  padding: 20px 25px;
+  margin: 10px;
+  background: linear-gradient(145deg, #ffffff, #f8f9fa);
+  border-radius: 18px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e9ecef;
+}
+
+.count-number {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #212529; /* abu gelap profesional */
+  font-family: 'Kanit', sans-serif; /* bisa ganti ke Inter, Poppins, Roboto */
+  margin-bottom: 5px;
+}
+
+.count-label {
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #6c757d; /* abu-abu Bootstrap */
 }
 
